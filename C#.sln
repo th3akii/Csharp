@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak3 - Transakcije", "Zadatak3 - Transakcije\Zadatak3 - Transakcije.csproj", "{7B907852-E451-4268-B7C7-D7623A76C83C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak1 - Tacke", "Zadatak1 - Tacke\Zadatak1 - Tacke.csproj", "{4CD27DC2-ED4D-421E-9655-7A7478730CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak 2 - Autobusi", "Zadatak 2 - Autobusi\Zadatak 2 - Autobusi.csproj", "{F4252490-5A10-4887-8E69-1CD3D3ED073D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak4 - DNK", "Zadatak4 - DNK\Zadatak4 - DNK.csproj", "{F9D641CD-251F-48BC-BC78-54457708F306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{7B907852-E451-4268-B7C7-D7623A76C83C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B907852-E451-4268-B7C7-D7623A76C83C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B907852-E451-4268-B7C7-D7623A76C83C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD27DC2-ED4D-421E-9655-7A7478730CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD27DC2-ED4D-421E-9655-7A7478730CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD27DC2-ED4D-421E-9655-7A7478730CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD27DC2-ED4D-421E-9655-7A7478730CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4252490-5A10-4887-8E69-1CD3D3ED073D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4252490-5A10-4887-8E69-1CD3D3ED073D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4252490-5A10-4887-8E69-1CD3D3ED073D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4252490-5A10-4887-8E69-1CD3D3ED073D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D641CD-251F-48BC-BC78-54457708F306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D641CD-251F-48BC-BC78-54457708F306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D641CD-251F-48BC-BC78-54457708F306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D641CD-251F-48BC-BC78-54457708F306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
