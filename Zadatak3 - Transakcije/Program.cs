@@ -11,7 +11,7 @@ namespace _39grupaAzadaci
 
    public class Transakcije
    {
-       private static int nextID = 100;
+       private static int nextID = 100; //nikad nece postojati isti id nezavisno od automata
        private int ID;
 
 
