@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Zadaci1
+namespace Zadaci
 {
     class Tacka
     {
