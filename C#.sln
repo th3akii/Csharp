@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak4 - DNK", "Zadatak4 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak5 - Preduzece", "Zadatak5 - Preduzece\Zadatak5 - Preduzece.csproj", "{B3E94E64-743E-449E-A851-54ACBDE2E0C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak6 - Tacka, Pravougaonik i Polje", "Zadatak6 - Tacka, Pravougaonik i Polje\Zadatak6 - Tacka, Pravougaonik i Polje.csproj", "{1C36B62B-1448-4057-A9E1-621ABC469BBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,18 @@ Global
 		{B3E94E64-743E-449E-A851-54ACBDE2E0C3}.Release|x64.Build.0 = Release|Any CPU
 		{B3E94E64-743E-449E-A851-54ACBDE2E0C3}.Release|x86.ActiveCfg = Release|Any CPU
 		{B3E94E64-743E-449E-A851-54ACBDE2E0C3}.Release|x86.Build.0 = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|x64.Build.0 = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Debug|x86.Build.0 = Debug|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|x64.ActiveCfg = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|x64.Build.0 = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{1C36B62B-1448-4057-A9E1-621ABC469BBE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
