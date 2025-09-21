@@ -34,4 +34,4 @@ Thumbs.db
 *.ReSharper.*
 
 # Others
-*.excalidraw
+.excalidraw
