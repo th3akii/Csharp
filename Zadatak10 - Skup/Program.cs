@@ -119,7 +119,6 @@ namespace Zadaci
                 Console.WriteLine("Skup je prazan");
             }
         }
-
     }
 
     internal class Program
@@ -185,7 +184,7 @@ namespace Zadaci
             razlika2.razlika(skupC, skupD);
             Console.Write("Razlika C \\ D: ");
             razlika2.toString();
-            */
+            //*/
         }
     }
 }
