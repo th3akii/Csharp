@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace Zadaci
 {
     public class Transakcije
@@ -49,10 +48,10 @@ namespace Zadaci
             transakcijeStanje = new double[100];
             brojTransakcija = 0;
         }
-
+        
         public Transakcije podigniIznos(double n)
         {
-            
+
             stanje -= n;
             Transakcije t = new Transakcije("isplata", n);
             if (brojTransakcija < transakcije.Length)
@@ -89,13 +88,11 @@ namespace Zadaci
         {
             Console.WriteLine("Sve transakcije na ovom automatu:");
 
-
             if (brojTransakcija == 0)
             {
                 Console.WriteLine("Nema transakcija.");
                 return;
             }
-
 
             for (int i = 0; i < brojTransakcija; i++)
             {
@@ -103,7 +100,6 @@ namespace Zadaci
             }
         }
     }
-
 
     internal class Program
     {
