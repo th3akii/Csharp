@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Zadaci
 {
     public class Autobus
     {
         private bool[] sedista = new bool[50];
 
+
         Int16 brojSlobondnihMesta = 50;
+
 
         public Autobus()
         {
@@ -19,6 +22,7 @@ namespace Zadaci
                 sedista[i] = true;
             }
         }
+
 
         public void uvesti (int n)
         {
@@ -36,6 +40,7 @@ namespace Zadaci
             }
         }
 
+
         public void ImaSlobodnihMesta()
         {
             if (brojSlobondnihMesta == 0)
@@ -48,15 +53,18 @@ namespace Zadaci
             }
         }
 
+
         public void BrojSlobodnihMesta()
         {
             Console.WriteLine("Ima {0} slobodnih mesta!", brojSlobondnihMesta);
         }
 
+
         public void BrojZauzetihMesta()
         {
             Console.WriteLine("{0} mesta je zauzeto!", 50 - brojSlobondnihMesta);
         }
+
 
         public void toString(int n)
         {
@@ -70,9 +78,11 @@ namespace Zadaci
         }
     }
 
+
     public class AutobusTest
     {
         Autobus autobus = new Autobus();
+
 
         public AutobusTest()
         {
@@ -80,6 +90,7 @@ namespace Zadaci
             autobus.uvesti(19);
             autobus.uvesti(49);
         }
+
 
         public void IspisiStanje()
         {
@@ -89,6 +100,7 @@ namespace Zadaci
             }
         }
     }
+
 
     internal class Program
     {
