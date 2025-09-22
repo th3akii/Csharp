@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak3 - Transakcije", "Z
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak1 - Tacke", "Zadatak1 - Tacke\Zadatak1 - Tacke.csproj", "{4CD27DC2-ED4D-421E-9655-7A7478730CF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak2 - Autobusi", "Zadatak 2 - Autobusi\Zadatak 2 - Autobusi.csproj", "{F4252490-5A10-4887-8E69-1CD3D3ED073D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak2 - Autobusi", "Zadatak2 - Autobusi\Zadatak2 - Autobusi.csproj", "{F4252490-5A10-4887-8E69-1CD3D3ED073D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zadatak4 - DNK", "Zadatak4 - DNK\Zadatak4 - DNK.csproj", "{F9D641CD-251F-48BC-BC78-54457708F306}"
 EndProject
