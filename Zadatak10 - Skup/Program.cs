@@ -119,7 +119,6 @@ namespace Zadaci
                 Console.WriteLine("Skup je prazan");
             }
         }
-
     }
 
     internal class Program
