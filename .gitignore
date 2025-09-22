@@ -32,3 +32,8 @@ Thumbs.db
 
 # Resharper
 *.ReSharper.*
+
+
+# Other
+.excalidraw
+tempCodeRunnerFile.cs
