@@ -57,20 +57,20 @@ namespace Zadaci
             return x;
         }
 
-        private int getBrojilac()
+        private int getBrojilac
         {
-            return this.a;
+            get { return this.a; }
         }
-        private int getImenilac()
+        private int getImenilac
         {
-            return this.b;
+            get { return this.b; }
         }
 
         public void dodaj(Razlomak razlomak)
         {
             //a/b + c/d = (a*d + c*b) / (b*d)
-            int noviA = this.a * razlomak.getImenilac() + razlomak.getBrojilac() * this.b;
-            int noviB = this.b * razlomak.getImenilac();
+            int noviA = this.a * razlomak.getImenilac + razlomak.getBrojilac * this.b;
+            int noviB = this.b * razlomak.getImenilac;
             this.a = noviA;
             this.b = noviB;
             srediRazlomak();
@@ -78,26 +78,26 @@ namespace Zadaci
         public void oduzmi(Razlomak razlomak)
         {
             //a/b - c/d = (a*d - c*b) / (b*d)
-            int noviA = this.a * razlomak.getImenilac() - razlomak.getBrojilac() * this.b;
-            int noviB = this.b * razlomak.getImenilac();
+            int noviA = this.a * razlomak.getImenilac - razlomak.getBrojilac * this.b;
+            int noviB = this.b * razlomak.getImenilac;
             this.a = noviA;
             this.b = noviB;
             srediRazlomak();
         }
         public void pomnozi(Razlomak razlomak)
         {
-            this.a *= razlomak.getBrojilac();
-            this.b *= razlomak.getImenilac();
+            this.a *= razlomak.getBrojilac;
+            this.b *= razlomak.getImenilac;
             srediRazlomak();
         }
         public void podeli(Razlomak razlomak)
         {
-            if (razlomak.getBrojilac() == 0)
+            if (razlomak.getBrojilac == 0)
             {
                 throw new ArgumentException("Ne može se deliti razlomkom čiji je brojilac nula.");
             }
-            this.a *= razlomak.getImenilac();
-            this.b *= razlomak.getBrojilac();
+            this.a *= razlomak.getImenilac;
+            this.b *= razlomak.getBrojilac;
             srediRazlomak();
         }
 

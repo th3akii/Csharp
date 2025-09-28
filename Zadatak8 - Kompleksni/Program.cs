@@ -22,8 +22,8 @@ namespace Zadaci
             this.im = im;
         }
 
-        public double getRe() { return this.re; }
-        public double getIm() { return this.im; }
+        public double getRe { get { return this.re; } }
+        public double getIm { get { return this.im; } }
 
         public double abs()
         {

@@ -28,8 +28,6 @@ namespace Zadaci
 
         public DNK(string deoLanca, int maxBrojKarika) : this(maxBrojKarika)
         {
-
-
             for (int i = 0; i < deoLanca.Length; i++)
             {
                 this.lanac[i] = deoLanca[i];
@@ -66,32 +64,34 @@ namespace Zadaci
             }
         }
 
-        public void getA()
+        public int getA
         {
-            int zbir = 0;
-            for (int i = 0; i < this.lanac.Length; i++)
+            get
             {
-                if (this.lanac[i] == 'A')
+                int zbir = 0;
+                for (int i = 0; i < this.lanac.Length; i++)
                 {
-                    zbir++;
+                    if (this.lanac[i] == 'A')
+                    {
+                        zbir++;
+                    }
                 }
+                return zbir;
             }
-            Console.WriteLine("Ima {0} A", zbir);
         }
 
-        public void getTrenutnaDuzina()
+        public int getTrenutnaDuzina
         {
-            Console.WriteLine("Trenutna duzina lanca je {0}", brojKarika);
+            get { return brojKarika; }
         }
 
-        public void getMaxDuzina()
+        public int getMaxDuzina
         {
-            Console.WriteLine("Maksimalna duzina lanca je {0}", maxBrojKarika);
+            get { return maxBrojKarika; }
         }
-
-        public void getSlobodnaMesta()
+        public int getSlobodnaMesta
         {
-            Console.WriteLine("Ima {0} slobodnih mesta", maxBrojKarika - brojKarika);
+            get { return maxBrojKarika - brojKarika; }
         }
 
         public void IspisiLanac()
@@ -119,12 +119,24 @@ namespace Zadaci
         {
             /*
             int n = Convert.ToInt32(Console.ReadLine());
-            DNK dnk1 = new DNK(n);  DNK dnk2 = new DNK("ACCGTTTT", n);
-            dnk1.dodaj('A');  dnk1.dodaj('T');  dnk1.dodaj('C');
-            dnk1.getSlobodnaMesta();  dnk1.IspisiObrnutiLanac();
-    dnk2.getTrenutnaDuzina(); dnk2.getSlobodnaMesta();  dnk2.dodaj('A');
+            DNK dnk1 = new DNK(n);
+            DNK dnk2 = new DNK("ACCGTTTT", n);
+
+            dnk1.dodaj('A');
+            dnk1.dodaj('T');
+            dnk1.dodaj('C');
+
+            Console.WriteLine("Slobodna mesta u dnk1: {0}", dnk1.getSlobodnaMesta);
+            Console.Write("Obrnuti lanac dnk1: ");
+            dnk1.IspisiObrnutiLanac();
+
+            Console.WriteLine("Trenutna duzina dnk2: {0}", dnk2.getTrenutnaDuzina);
+            Console.WriteLine("Slobodna mesta u dnk2: {0}", dnk2.getSlobodnaMesta);
+            dnk2.dodaj('A');
+            Console.Write("Lanac dnk2: ");
             dnk2.IspisiLanac();
-            dnk2.getA();
+
+            Console.WriteLine("Ima {0} A", dnk2.getA);
             */
         }
     }

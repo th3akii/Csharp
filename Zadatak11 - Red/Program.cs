@@ -9,26 +9,29 @@ namespace Zadaci
     class Element
     {
         private int broj;
-        private Element sledeci;
+        private Element? sledeci;
 
         public Element(int broj)
         {
             this.broj = broj;
-            this.sledeci = null!;
+            this.sledeci = null;
         }
         public Element(int broj, Element sledeci) : this(broj)
         {
             this.sledeci = sledeci;
         }
 
-        public Element getSledeci()
+        public Element getSledeci
         {
-            return this.sledeci;
+            get { return this.sledeci!; }
         }
-        public int getBroj() { return this.broj; }
-        public void setSledeci(Element sledeci)
+        public int getBroj { get { return this.broj; } }
+        public Element setSledeci
         {
-            this.sledeci = sledeci;
+            set
+            {
+                this.sledeci = value;
+            }
         }
     }
 
@@ -54,14 +57,14 @@ namespace Zadaci
                 return;
             }
 
-            poslednji.setSledeci(element);
+            poslednji.setSledeci = element;
             poslednji = element;
         }
 
         public int uzmi()
         {
-            int broj = prvi.getBroj();
-            prvi = prvi.getSledeci();
+            int broj = prvi.getBroj;
+            prvi = prvi.getSledeci;
 
             if (prvi == null)
             {
@@ -76,8 +79,8 @@ namespace Zadaci
             while (prvi != null)
             {
                 Element trenutni = prvi;
-                prvi = prvi.getSledeci();
-                trenutni.setSledeci(null!);
+                prvi = prvi.getSledeci;
+                trenutni.setSledeci = null!;
             }
             poslednji = null!;
         }
@@ -98,12 +101,12 @@ namespace Zadaci
             Element trenutni = prvi;
             while (trenutni != null)
             {
-                Console.Write(trenutni.getBroj());
-                if (trenutni.getSledeci() != null)
+                Console.Write(trenutni.getBroj);
+                if (trenutni.getSledeci != null)
                 {
                     Console.Write(", ");
                 }
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
             Console.WriteLine();
         }

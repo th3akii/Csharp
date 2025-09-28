@@ -10,10 +10,7 @@ namespace Zadaci
     public class Autobus
     {
         private bool[] sedista = new bool[50];
-
-
         Int16 brojSlobondnihMesta = 50;
-
 
         public Autobus()
         {
@@ -22,7 +19,6 @@ namespace Zadaci
                 sedista[i] = true;
             }
         }
-
 
         public void uvesti (int n)
         {
@@ -39,7 +35,6 @@ namespace Zadaci
                 brojSlobondnihMesta--;
             }
         }
-
 
         public void ImaSlobodnihMesta()
         {
@@ -83,14 +78,12 @@ namespace Zadaci
     {
         Autobus autobus = new Autobus();
 
-
         public AutobusTest()
         {
             autobus.uvesti(0);
             autobus.uvesti(19);
             autobus.uvesti(49);
         }
-
 
         public void IspisiStanje()
         {
@@ -100,7 +93,6 @@ namespace Zadaci
             }
         }
     }
-
 
     internal class Program
     {

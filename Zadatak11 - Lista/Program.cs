@@ -21,14 +21,17 @@ namespace Zadaci
             this.sledeci = sledeci;
         }
 
-        public Element getSledeci()
+        public Element getSledeci
         {
-            return this.sledeci!;
+            get { return this.sledeci!; }
         }
-        public int getBroj() { return this.broj; }
-        public void setSledeci(Element sledeci)
+        public int getBroj { get { return this.broj; } }
+        public Element setSledeci
         {
-            this.sledeci = sledeci;
+            set
+            {
+                this.sledeci = value;
+            }
         }
     }
 
@@ -53,7 +56,7 @@ namespace Zadaci
             while(trenutni != null)
             {
                 duzina++;
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
 
             return duzina;
@@ -61,7 +64,7 @@ namespace Zadaci
         public void naPocetak(int n)
         {
             Element novi = new Element(n);
-            novi.setSledeci(prvi);
+            novi.setSledeci = prvi;
             this.prvi = novi;
         }
 
@@ -76,12 +79,12 @@ namespace Zadaci
             }
 
             Element trenutni = prvi;
-            while (trenutni.getSledeci() != null)
+            while (trenutni.getSledeci != null)
             {
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
 
-            trenutni.setSledeci(novi);
+            trenutni.setSledeci = novi;
         }
 
         public void umetni(int n)
@@ -95,35 +98,35 @@ namespace Zadaci
             }
 
             Element trenutni = prvi;
-            while (trenutni.getSledeci() != null && trenutni.getSledeci().getBroj() < n)
+            while (trenutni.getSledeci != null && trenutni.getSledeci.getBroj < n)
             {
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
 
-            novi.setSledeci(trenutni.getSledeci());
-            trenutni.setSledeci(novi);
+            novi.setSledeci = trenutni.getSledeci;
+            trenutni.setSledeci = novi;
         }
 
         public void izostavi(int n)
         {
             if (prvi == null) return;
 
-            if (prvi.getBroj() == n)
+            if (prvi.getBroj == n)
             {
-                prvi = prvi.getSledeci();
+                prvi = prvi.getSledeci;
                 return;
             }
 
 
             Element trenutni = prvi;
-            while (trenutni.getSledeci() != null)
+            while (trenutni.getSledeci != null)
             {
-                if(trenutni.getSledeci().getBroj() == n)
+                if (trenutni.getSledeci.getBroj == n)
                 {
-                    trenutni.setSledeci(trenutni.getSledeci().getSledeci());
+                    trenutni.setSledeci = trenutni.getSledeci.getSledeci;
                 }
 
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
         }
 
@@ -136,15 +139,15 @@ namespace Zadaci
             }
 
             Element trenutni = prvi;
-            while (trenutni.getSledeci() != null)
+            while (trenutni.getSledeci != null)
             {
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
 
             for (int i = 0; i < n; i++)
             {
                 Element element = new Element(Convert.ToInt32(Console.ReadLine()));
-                trenutni.setSledeci(element);
+                trenutni.setSledeci = element;
                 trenutni = element;
             }
         }
@@ -153,7 +156,7 @@ namespace Zadaci
             for (int i = 0; i < n; i++)
             {
                 Element element = new Element(Convert.ToInt32(Console.ReadLine()));
-                element.setSledeci(prvi);
+                element.setSledeci = prvi;
                 prvi = element;
             }
         }
@@ -169,12 +172,12 @@ namespace Zadaci
             Element trenutni = prvi;
             while (trenutni != null)
             {
-                Console.Write(trenutni.getBroj());
-                if (trenutni.getSledeci() != null)
+                Console.Write(trenutni.getBroj);
+                if (trenutni.getSledeci != null)
                 {
                     Console.Write(", ");
                 }
-                trenutni = trenutni.getSledeci();
+                trenutni = trenutni.getSledeci;
             }
             Console.WriteLine();
         }

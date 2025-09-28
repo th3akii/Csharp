@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +24,8 @@ namespace Zadaci
             this.im = im;
         }
 
-        public double getRe() { return this.re; }
-        public double getIm() { return this.im; }
+        public double getRe { get { return this.re; } }
+        public double getIm { get { return this.im; } }
 
         public double abs()
         {
@@ -107,7 +108,7 @@ namespace Zadaci
             this.index = 0;
         }
 
-        public int duzina() { return this.nizKompleksnih.Length; }
+        public int duzina { get { return this.nizKompleksnih.Length; } }
 
         public void postavi(Kompleksni z) { this.nizKompleksnih[index++] = z; }
 
@@ -121,8 +122,8 @@ namespace Zadaci
 
         public Kompleksni poli(Kompleksni z)
         {
-            Kompleksni poli = new Kompleksni(this.nizKompleksnih[0].getRe(),
-                                            this.nizKompleksnih[0].getIm());
+            Kompleksni poli = new Kompleksni(this.nizKompleksnih[0].getRe,
+                                            this.nizKompleksnih[0].getIm);
             for (int i = 1; i < index; i++)
             {
                 poli = poli.zbir(nizKompleksnih[i].proizvod(z.power(i)));

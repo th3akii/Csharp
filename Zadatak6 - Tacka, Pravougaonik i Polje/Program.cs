@@ -25,25 +25,25 @@ namespace Zadaci
             this.y = 0;
         }
 
-        public int getX()
+        public int getX
         {
-            return this.x;
+            get { return this.x; }
         }
-        public int getY()
+        public int getY
         {
-            return this.y;
+            get { return this.y; }
         }
 
         public void postavi(Tacka t)
         {
-            this.x = t.getX();
-            this.y = t.getY();
+            this.x = t.getX;
+            this.y = t.getY;
         }
 
         public void transliraj(Tacka t)
         {
-            this.x += t.getX();
-            this.y += t.getY();
+            this.x += t.getX;
+            this.y += t.getY;
         }
 
         public void toString()
@@ -64,17 +64,17 @@ namespace Zadaci
 
         public Pravougaonik(Tacka tacka1, Tacka tacka2)
         {
-            if (tacka1.getX() == tacka2.getX() || tacka1.getY() == tacka2.getY())
+            if (tacka1.getX == tacka2.getX || tacka1.getY == tacka2.getY)
             {
                 prvo = new int[2] { 0, 0 };
                 drugo = new int[2] { 1, 1 };
             }
             else
             {
-                int minX = Math.Min(tacka1.getX(), tacka2.getX());
-                int minY = Math.Min(tacka1.getY(), tacka2.getY());
-                int maxX = Math.Max(tacka1.getX(), tacka2.getX());
-                int maxY = Math.Max(tacka1.getY(), tacka2.getY());
+                int minX = Math.Min(tacka1.getX, tacka2.getX);
+                int minY = Math.Min(tacka1.getY, tacka2.getY);
+                int maxX = Math.Max(tacka1.getX, tacka2.getX);
+                int maxY = Math.Max(tacka1.getY, tacka2.getY);
 
                 prvo = new int[2] { minX, minY};
                 drugo = new int[2] { maxX, maxY};
@@ -83,8 +83,8 @@ namespace Zadaci
 
         public void transliraj(Tacka t)
         {
-            this.prvo[0] += t.getX(); this.prvo[1] += t.getY();
-            this.drugo[0] += t.getX(); this.drugo[1] += t.getY();
+            this.prvo[0] += t.getX; this.prvo[1] += t.getY;
+            this.drugo[0] += t.getX; this.drugo[1] += t.getY;
         }
 
         public void vratiUPocetak()
@@ -92,27 +92,27 @@ namespace Zadaci
             this.prvo[0] = 0; this.prvo[1] = 0;
         }
 
-        public int getMaxX()
+        public int getMaxX
         {
-            return drugo[0];
+            get { return drugo[0]; }
         }
-        public int getMaxY()
+        public int getMaxY
         {
-            return drugo[1];
+            get { return drugo[1]; }
         }
-        public int getMinX()
+        public int getMinX
         {
-            return prvo[0];
+            get { return prvo[0]; }
         }
-        public int getMinY()
+        public int getMinY
         {
-            return prvo[1];
+            get { return prvo[1]; }
         }
 
         public bool unutar(Tacka t)
         {
-            return prvo[0] <= t.getX() && prvo[1] <= t.getY() &&
-                   drugo[0] >= t.getX() && drugo[1] >= t.getY();
+            return prvo[0] <= t.getX && prvo[1] <= t.getY &&
+                   drugo[0] >= t.getX && drugo[1] >= t.getY;
         }
 
         public void toString()
@@ -135,7 +135,7 @@ namespace Zadaci
 
         public Polje(int x, int y, Pravougaonik pravougaonik) : this(x, y)
         {
-            Tacka translacija = new Tacka(-pravougaonik.getMinX(), -pravougaonik.getMinY());
+            Tacka translacija = new Tacka(-pravougaonik.getMinX, -pravougaonik.getMinY);
             pravougaonik.transliraj(translacija);
             this.objekat = pravougaonik;
         }
@@ -157,26 +157,26 @@ namespace Zadaci
             this.objekat = null;
         }
 
-        public bool mozeGore()
+        public bool mozeGore
         {
-            return objekat != null && objekat.getMaxY() < ny - 1;
+            get { return objekat != null && objekat.getMaxY < ny - 1; }
         }
-        public bool mozeLevo()
+        public bool mozeLevo
         {
-            return objekat != null && objekat.getMinX() > 0;
+            get { return objekat != null && objekat.getMinX > 0; }
         }
-        public bool mozeDesno()
+        public bool mozeDesno
         {
-            return objekat != null && objekat.getMaxX() < nx - 1;
+            get { return objekat != null && objekat.getMaxX < nx - 1; }
         }
-        public bool mozeDole()
+        public bool mozeDole
         {
-            return objekat != null && objekat.getMinY() > 0;
+            get { return objekat != null && objekat.getMinY > 0; }
         }
 
         public void idiGore()
         {
-            if (mozeGore() && objekat != null)
+            if (mozeGore && objekat != null)
             {
                 Tacka tacka = new Tacka(0, 1);
                 objekat.transliraj(tacka);
@@ -184,7 +184,7 @@ namespace Zadaci
         }
         public void idiDole()
         {
-            if (mozeDole() && objekat != null)
+            if (mozeDole && objekat != null)
             {
                 Tacka tacka = new Tacka(0, -1);
                 objekat.transliraj(tacka);
@@ -193,7 +193,7 @@ namespace Zadaci
 
         public void idiLevo()
         {
-            if (mozeLevo() && objekat != null)
+            if (mozeLevo && objekat != null)
             {
                 Tacka tacka = new Tacka(-1, 0);
                 objekat.transliraj(tacka);
@@ -202,7 +202,7 @@ namespace Zadaci
 
         public void idiDesno()
         {
-            if (mozeDesno() && objekat != null)
+            if (mozeDesno && objekat != null)
             {
                 Tacka tacka = new Tacka(1, 0);
                 objekat.transliraj(tacka);
@@ -297,7 +297,7 @@ namespace Zadaci
                     case 2: // Gore
                         if (pravougaonik != null)
                         {
-                            if (polje.mozeGore())
+                            if (polje.mozeGore)
                             {
                                 polje.idiGore();
                                 Console.WriteLine("Pravougaonik pomeren gore:");
@@ -317,7 +317,7 @@ namespace Zadaci
                     case 3: // Dole
                         if (pravougaonik != null)
                         {
-                            if (polje.mozeDole())
+                            if (polje.mozeDole)
                             {
                                 polje.idiDole();
                                 Console.WriteLine("Pravougaonik pomeren dole:");
@@ -337,7 +337,7 @@ namespace Zadaci
                     case 4: // Levo
                         if (pravougaonik != null)
                         {
-                            if (polje.mozeLevo())
+                            if (polje.mozeLevo)
                             {
                                 polje.idiLevo();
                                 Console.WriteLine("Pravougaonik pomeren levo:");
@@ -357,7 +357,7 @@ namespace Zadaci
                     case 5: // Desno
                         if (pravougaonik != null)
                         {
-                            if (polje.mozeDesno())
+                            if (polje.mozeDesno)
                             {
                                 polje.idiDesno();
                                 Console.WriteLine("Pravougaonik pomeren desno:");

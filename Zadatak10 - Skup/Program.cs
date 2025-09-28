@@ -101,7 +101,7 @@ namespace Zadaci
                 niz[brojClanova++] = n;
         }
 
-        public int velicina() { return brojClanova; }
+        public int velicina { get { return brojClanova; } }
 
         public void toString()
         {

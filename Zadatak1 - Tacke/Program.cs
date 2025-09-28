@@ -51,16 +51,16 @@ namespace Zadaci
             double rastojanjeX = Math.Abs(this.x - O.x);
             double rastojanjeY = Math.Abs(this.y - O.y);
 
-
             return Math.Sqrt(rastojanjeX * rastojanjeX + rastojanjeY * rastojanjeY);
         }
 
-        public string toString ()
+        public string toString
         {
-            string strX = Convert.ToString(this.x);
-            string strY = Convert.ToString(this.y);
-
-            return "( " + strX + " , " + strY  + " ) ";
+            get {
+                string strX = Convert.ToString(this.x);
+                string strY = Convert.ToString(this.y);
+                return "( " + strX + " , " + strY  + " ) ";
+            }
         }
     }
 
@@ -73,12 +73,12 @@ namespace Zadaci
             Tacka B = new Tacka();
             Tacka C = new Tacka(4);
 
-            Console.WriteLine(A.toString());
-            Console.WriteLine(B.toString());
-            Console.WriteLine(C.toString());
+            Console.WriteLine(A.toString);
+            Console.WriteLine(B.toString);
+            Console.WriteLine(C.toString);
 
             B.postavi(5, 5);
-            Console.WriteLine(B.toString());
+            Console.WriteLine(B.toString);
 
             Console.WriteLine("Rastojanje tacke A od koordinatnog pocetka je : {0}", A.rastojanje());
             Console.WriteLine("Rastojanje tacke B od koordinatnog pocetka je : {0}", B.rastojanje());

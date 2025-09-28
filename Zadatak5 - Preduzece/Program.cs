@@ -31,9 +31,9 @@ namespace Zadaci
             this.sef = sef;
         }
 
-        public double getPlata()
+        public double getPlata
         {
-            return this.plata;
+            get { return this.plata; }
         }
 
         public bool jesteSef(Sef sef)
@@ -45,7 +45,7 @@ namespace Zadaci
         {
             if (this.sef != null)
             {
-                Console.WriteLine("Osoba {0} ima platu {1} i sef te osobe je {2}", ime, plata, this.sef.getPseudonim());
+                Console.WriteLine("Osoba {0} ima platu {1} i sef te osobe je {2}", ime, plata, this.sef.getPseudonim);
             }
             else
             {
@@ -71,7 +71,7 @@ namespace Zadaci
         {
             if (zaposleni.jesteSef(this))
             {
-                zaposleni.postaviPlatu(zaposleni.getPlata() + povecanje);
+                zaposleni.postaviPlatu(zaposleni.getPlata + povecanje);
                 Console.WriteLine("Uspesno povecana plata");
             }
             else
@@ -80,9 +80,9 @@ namespace Zadaci
             }
         }
 
-        public string getPseudonim()
+        public string getPseudonim
         {
-            return this.pseudonim;
+            get { return this.pseudonim; }
         }
 
         public void ispisiZaposlenog(Zaposleni zaposleni)
