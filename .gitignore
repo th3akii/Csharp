@@ -1,0 +1,41 @@
+# Build artifacts
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+.vscode/
+
+# Rider IDE
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Resharper
+*.ReSharper.*
+
+# Other
+.editorconfig
+.excalidraw
+tempCodeRunnerFile.cs
+.history/
