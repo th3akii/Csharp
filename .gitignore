@@ -1,0 +1,68 @@
+# Build artifacts
+bin/
+obj/
+Debug/
+Release/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.userosscache
+*.sln.docstates
+*.pdb
+
+# Visual Studio Code workspace settings
+.vscode/
+
+# Rider IDE
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+# Dotnet restore folders
+.project.lock.json
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS2017+ auto generated files
+Generated_Code/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Resharper
+*.ReSharper.*
+*.resharper
+
+# Other
+.editorconfig
+.excalidraw
+tempCodeRunnerFile.cs
+.history/
+*.DotSettings.user
+.idea/
+*.swp
+
+# Publish output
+publish/
+
+# Test results
+TestResults/
+*.trx
